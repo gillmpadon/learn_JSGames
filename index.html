@@ -1,0 +1,32 @@
+<html lang = "en">
+  <head>
+    <title> Visibility control </title>
+    <meta charset = "utf-8" />
+    <script>
+function flipImag() {
+  dom = document.getElementById("saturn").style;  
+
+// Flip the visibility adjective to whatever it is not now 
+ if (dom.visibility == "visible")
+   dom.visibility = "hidden";
+ else
+   dom.visibility = "visible";
+
+}
+    </script>
+  </head>
+  <body>
+    <form action = "">
+      <div id = "saturn"  style = "position: relative; 
+           visibility: visible;">
+        <img src = "./1_HarryPotter_game/Images/demon.png" 
+             alt = "(Pictures of Saturn)" />
+      </div>
+      <p>
+        <br />
+        <input type = "button"  value = "Toggle Saturn"
+               onclick = "flipImag()" />
+      </p>
+    </form>
+  </body>
+</html>
